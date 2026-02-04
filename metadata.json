@@ -1,0 +1,9 @@
+
+{
+  "name": "Lyceum Review Portal",
+  "description": "A high-performance portal for Lyceum Review, featuring news from VK, AI-powered chat assistance, and high-fidelity image generation.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
