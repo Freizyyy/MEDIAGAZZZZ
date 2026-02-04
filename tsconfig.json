@@ -10,27 +10,12 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "index.tsx",
-    "types.ts",
-    "constants.tsx",
-    "components/**/*.tsx",
-    "services/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "vite.config.ts"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+  "include": ["index.tsx", "App.tsx", "types.ts", "constants.tsx", "components/**/*.tsx", "services/**/*.ts"],
+  "exclude": ["node_modules", "dist", "vite.config.ts"]
 }
