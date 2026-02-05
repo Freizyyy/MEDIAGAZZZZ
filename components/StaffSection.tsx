@@ -5,6 +5,7 @@ const staffData = {
   grade11: [
     { name: "Мананкова Ульяна", role: "Редактор статей" },
     { name: "Малышева Арина", role: "Глава пресс-центра / Визуал" },
+    { name: "Деймунд Рафаэль", role: "Технический администратор" },
     { name: "Лазарева Алёна", role: "Статьи и обзоры" },
     { name: "Рубаник Елизавета", role: "Редакция" },
     { name: "Лосева Дарья", role: "Связи с общественностью" },
@@ -35,7 +36,9 @@ const StaffSection: React.FC = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {staffData.grade11.map((member, i) => (
             <div key={i} className="group bg-white p-10 rounded-[3rem] border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-3 transition-all duration-700 flex flex-col items-center text-center">
-              <div className="w-24 h-24 bg-blue-50 rounded-full mb-8 flex items-center justify-center text-4xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-inner">👤</div>
+              <div className="w-24 h-24 bg-blue-50 rounded-full mb-8 flex items-center justify-center text-4xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-inner">
+                {member.role.toLowerCase().includes('администратор') || member.role.toLowerCase().includes('тех') ? '🛠️' : '👤'}
+              </div>
               <h4 className="font-black text-gray-900 text-2xl tracking-tight">{member.name}</h4>
               <div className="mt-5 px-6 py-2 bg-blue-600/5 text-blue-600 text-[11px] font-black uppercase tracking-[0.25em] rounded-full border border-blue-600/10">
                 {member.role}
