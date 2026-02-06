@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Icons } from '../constants';
 
 const FeedbackSection: React.FC = () => {
   const [sent, setSent] = useState(false);
@@ -13,8 +14,9 @@ const FeedbackSection: React.FC = () => {
   return (
     <div className="max-w-6xl mx-auto py-6 sm:py-12 px-4 space-y-12 sm:space-y-16">
       <div className="grid lg:grid-cols-5 gap-10 sm:gap-16">
+        {/* Contact Info Column */}
         <div className="lg:col-span-2 space-y-8 sm:space-y-12">
-          <div className="space-y-4 sm:space-y-6">
+          <div className="space-y-4 sm:space-y-6 animate-wow delay-100">
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 tracking-tighter leading-tight">Свяжитесь с нами</h2>
             <p className="text-gray-500 text-lg sm:text-xl font-medium leading-relaxed opacity-80">
               У вас есть идея для крутого материала или вы хотите стать частью нашей команды? Мы открыты для любых предложений!
@@ -22,24 +24,30 @@ const FeedbackSection: React.FC = () => {
           </div>
 
           <div className="grid gap-4 sm:gap-6">
-            <div className="group flex items-center space-x-4 sm:space-x-6 p-5 sm:p-6 bg-white rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-50 rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl shrink-0 group-hover:scale-110 transition-transform">📧</div>
+            <div className="group flex items-center space-x-4 sm:space-x-6 p-5 sm:p-6 bg-white rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 animate-wow delay-200">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-50 text-blue-600 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500 shadow-inner">
+                <Icons.Mail />
+              </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[9px] sm:text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-1">Арина Малышева</p>
                 <a href="mailto:malyschewa.arina@gmail.com" className="text-sm sm:text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors block truncate">malyschewa.arina@gmail.com</a>
               </div>
             </div>
 
-            <div className="group flex items-center space-x-4 sm:space-x-6 p-5 sm:p-6 bg-white rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-indigo-50 rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl shrink-0 group-hover:scale-110 transition-transform">📩</div>
+            <div className="group flex items-center space-x-4 sm:space-x-6 p-5 sm:p-6 bg-white rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 animate-wow delay-300">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-indigo-50 text-indigo-600 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-500 shadow-inner">
+                <Icons.Mail />
+              </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[9px] sm:text-[10px] font-black text-indigo-600 uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-1">Ульяна Мананкова</p>
                 <a href="mailto:ulya.m.m@mail.ru" className="text-sm sm:text-lg font-bold text-gray-900 hover:text-indigo-600 transition-colors block truncate">ulya.m.m@mail.ru</a>
               </div>
             </div>
             
-            <div className="group flex items-center space-x-4 sm:space-x-6 p-5 sm:p-6 bg-white rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-50 rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl shrink-0 group-hover:scale-110 transition-transform">📞</div>
+            <div className="group flex items-center space-x-4 sm:space-x-6 p-5 sm:p-6 bg-white rounded-[1.5rem] sm:rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 animate-wow delay-400">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-50 text-green-600 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:bg-green-600 group-hover:text-white transition-all duration-500 shadow-inner">
+                <Icons.Phone />
+              </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[9px] sm:text-[10px] font-black text-green-600 uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-1">Телефон Редакции</p>
                 <a href="tel:+79139303008" className="text-sm sm:text-lg font-bold text-gray-900 hover:text-green-600 transition-colors">+7 913 930 30 08</a>
@@ -48,7 +56,8 @@ const FeedbackSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="lg:col-span-3 bg-white p-6 sm:p-14 rounded-[2rem] sm:rounded-[4rem] border border-gray-100 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] relative overflow-hidden">
+        {/* Form Column */}
+        <div className="lg:col-span-3 bg-white p-6 sm:p-14 rounded-[2rem] sm:rounded-[4rem] border border-gray-100 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)] relative overflow-hidden animate-wow delay-200">
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-50/50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
           
           {sent ? (
@@ -60,7 +69,7 @@ const FeedbackSection: React.FC = () => {
               </div>
               <button 
                 onClick={() => setSent(false)}
-                className="px-10 py-4 bg-gray-900 text-white rounded-xl sm:rounded-2xl font-black text-[10px] sm:text-xs uppercase tracking-widest hover:bg-blue-600 transition-all"
+                className="px-10 py-4 bg-gray-900 text-white rounded-xl sm:rounded-2xl font-black text-[10px] sm:text-xs uppercase tracking-widest hover:bg-blue-600 transition-all shadow-lg active:scale-95"
               >
                 ОТПРАВИТЬ ЕЩЕ ОДНО
               </button>
@@ -74,7 +83,10 @@ const FeedbackSection: React.FC = () => {
 
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-8">
                 <div className="space-y-2 sm:space-y-3">
-                  <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-2">Как вас зовут?</label>
+                  <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-2 flex items-center gap-2">
+                    <div className="w-4 h-4 text-blue-500"><Icons.Users /></div>
+                    Как вас зовут?
+                  </label>
                   <input 
                     required 
                     type="text" 
@@ -83,7 +95,10 @@ const FeedbackSection: React.FC = () => {
                   />
                 </div>
                 <div className="space-y-2 sm:space-y-3">
-                  <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-2">Ваш Email</label>
+                  <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-2 flex items-center gap-2">
+                    <div className="w-4 h-4 text-blue-500"><Icons.Mail /></div>
+                    Ваш Email
+                  </label>
                   <input 
                     required 
                     type="email" 
@@ -94,7 +109,10 @@ const FeedbackSection: React.FC = () => {
               </div>
               
               <div className="space-y-2 sm:space-y-3">
-                <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-2">Текст сообщения</label>
+                <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-2 flex items-center gap-2">
+                  <div className="w-4 h-4 text-blue-500"><Icons.MessageSquare /></div>
+                  Текст сообщения
+                </label>
                 <textarea 
                   required 
                   rows={4}
@@ -105,9 +123,10 @@ const FeedbackSection: React.FC = () => {
 
               <button 
                 type="submit"
-                className="w-full py-5 sm:py-6 bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white rounded-xl sm:rounded-[1.5rem] font-black text-base sm:text-lg uppercase tracking-widest shadow-[0_20px_40px_-10px_rgba(37,99,235,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-500"
+                className="w-full py-5 sm:py-6 bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-600 text-white rounded-xl sm:rounded-[1.5rem] font-black text-base sm:text-lg uppercase tracking-widest shadow-[0_20px_40px_-10px_rgba(37,99,235,0.4)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-500 flex items-center justify-center space-x-3"
               >
-                Отправить
+                <div className="w-6 h-6"><Icons.Send /></div>
+                <span>Отправить</span>
               </button>
             </form>
           )}
