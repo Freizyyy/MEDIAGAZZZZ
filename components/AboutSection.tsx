@@ -24,7 +24,7 @@ const AboutSection: React.FC = () => {
       {/* History Grid */}
       <div className="grid md:grid-cols-2 gap-6 sm:gap-10">
         <div className="bg-white p-8 sm:p-12 rounded-[2rem] sm:rounded-[3rem] border border-gray-100 shadow-xl shadow-blue-500/5 hover:-translate-y-2 transition-transform duration-700">
-          <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-2xl sm:rounded-3xl flex items-center justify-center text-blue-600 text-xl sm:text-2xl font-black mb-6 sm:mb-10 shadow-inner">2020</div>
+          <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-2xl sm:rounded-3xl flex items-center justify-center text-blue-600 text-xl sm:text-2xl font-black mb-6 sm:mb-10 shadow-inner">2022</div>
           <h3 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tighter mb-4 sm:mb-6">Начало пути</h3>
           <p className="text-gray-500 text-base sm:text-lg leading-relaxed font-medium">
             Все началось с идеи небольшой группы энтузиастов, которые хотели сделать жизнь лицея ярче. Мы начали как проект ВКонтакте и выросли в полноценное цифровое медиа.
