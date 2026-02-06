@@ -127,7 +127,7 @@ const App: React.FC = () => {
                 </div>
               </div>
               <p className="text-gray-400 text-lg sm:text-2xl leading-relaxed max-w-md font-medium tracking-tighter opacity-80">
-                Независимое цифровое издание Лицея. Рассказываем историю нашего пути, побед и идей с 2020 года.
+                Независимое цифровое издание Лицея. Рассказываем историю нашего пути, побед и идей с 2022 года.
               </p>
               <div className="flex space-x-6 sm:space-x-10">
                 <a href="https://vk.com/lyceumreview" target="_blank" className="w-14 h-14 sm:w-18 sm:h-18 bg-white/5 border border-white/10 rounded-2xl sm:rounded-[1.5rem] flex items-center justify-center hover:bg-blue-600 transition-all duration-500">
