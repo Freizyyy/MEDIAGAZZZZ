@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const staffData = {
@@ -30,7 +29,7 @@ const StaffSection: React.FC = () => {
     <div className="max-w-6xl mx-auto py-20 px-4 space-y-40">
       <section>
         <div className="flex flex-col items-center mb-20 text-center">
-            <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-8 font-heading tracking-tighter">Выпускники 2025</h2>
+            <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-8 font-heading tracking-tighter">Выпускники 2026</h2>
             <div className="w-32 h-2.5 bg-gradient-to-r from-blue-600 via-indigo-500 to-indigo-600 rounded-full shadow-lg shadow-blue-200"></div>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
